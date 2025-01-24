@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        const num1= 10;
+        const num2= 20;
+
+        
+
+        function getSum() {
+            const sum = num1 + num2;
+            console.log("the sum is", sum);
+        }
+
+
+        function getDifference() {
+            const diff = num1 - num2;
+            console.log("the difference is", diff);
+        }
+
+        function getProduct(num3, num4){
+            const product = num3 * num4;
+            console.log("The product is",product);
+
+        }
+
+        function getAverage(sub1,sub2,sub3){
+            const sum = sub1 + sub2 + sub3;
+            const average = sum / 3 ;
+            console.log("The Average is", average)
+        }
+
+        function getQuotient(num6,num7){
+            const quotient = num6 / num7;
+            return quotient;
+
+        }
+
+        
+        getSum();
+        getDifference();
+        getProduct(5,20);
+        getProduct(10,50);
+        getAverage(99,98,97);
+        console.log("The quotient is",getQuotient(20,2));
+
+
+        function gradeSum(grade1,grade2,grade3){
+            return grade1 + grade2+ grade3;
+        }
+
+        function getAverage(grade1,grade2,grade3){
+            const sum= gradeSum(grade1,grade2,                                                                                                                                                                                                     grade3);
+            const average = sum / 3;
+            return average;
+        }
+
+        const sum = (grade1, grade2, grade3) => {
+            const ans = grade1+ grade2 + grade3;
+            return ans
+        }
+
+        console.log("The Summm is",sum(99,98,94));
+
+        console.log("The Average is",getAverage(97,96,95));
+        console.log("The Sum is",gradeSum(97,96,95));
+        
+    
+    </script>
+        
+</head>
+<body>
+    
+</body>
+</html>
