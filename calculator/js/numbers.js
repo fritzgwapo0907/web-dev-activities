@@ -1,100 +1,119 @@
 function zero() {
-    const num = document.getElementById('display1').value;
-
-    if (num !== "0") {
-        document.getElementById('display1').value = num + "0";
+    const num = document.getElementById('display').value;
+   
+    if (num != 0) {
+     const newNum = num + '0';
+     document.getElementById('display').value = newNum;
     }
-}
-
-function one() {
-    const num = document.getElementById('display1').value;
-
-    if (num === "0") {
-        document.getElementById('display1').value = "1";
-    } else {
-        document.getElementById('display1').value = num + "1";
+   }
+   
+   function one() {
+    const num = document.getElementById('display').value;
+   
+    if (num == 0) {
+     document.getElementById('display').value = 1;
     }
-}
-
-function two() {
-    const num = document.getElementById('display1').value;
-
-    if (num === "0") {
-        document.getElementById('display1').value = "2";
-    } else {
-        document.getElementById('display1').value = num + "2";
+    else {
+     const newNum = num + '1';
+     document.getElementById('display').value = newNum;
     }
-}
-
-function three() {
-    const num = document.getElementById('display1').value;
-
-    if (num === "0") {
-        document.getElementById('display1').value = "3";
-    } else {
-        document.getElementById('display1').value = num + "3";
+   }
+   
+   function two() {
+    const num = document.getElementById('display').value;
+   
+    if (num == 0) {
+     document.getElementById('display').value = 2;
     }
-}
-
-function four() {
-    const num = document.getElementById('display1').value;
-
-    if (num === "0") {
-        document.getElementById('display1').value = "4";
-    } else {
-        document.getElementById('display1').value = num + "4";
+    else {
+     const newNum = num + '2';
+     document.getElementById('display').value = newNum;
     }
-}
-
-function five() {
-    const num = document.getElementById('display1').value;
-
-    if (num === "0") {
-        document.getElementById('display1').value = "5";
-    } else {
-        document.getElementById('display1').value = num + "5";
+   }
+   
+   function three() {
+    const num = document.getElementById('display').value;
+   
+    if (num == 0) {
+     document.getElementById('display').value = 3;
     }
-}
-
-function six() {
-    const num = document.getElementById('display1').value;
-
-    if (num === "0") {
-        document.getElementById('display1').value = "6";
-    } else {
-        document.getElementById('display1').value = num + "6";
+    else {
+     const newNum = num + '3';
+     document.getElementById('display').value = newNum;
     }
-}
-
-function seven() {
-    const num = document.getElementById('display1').value;
-
-    if (num === "0") {
-        document.getElementById('display1').value = "7";
-    } else {
-        document.getElementById('display1').value = num + "7";
+   }
+   
+   function four() {
+    const num = document.getElementById('display').value;
+   
+    if (num == 0) {
+     document.getElementById('display').value = 4;
     }
-}
-
-function eight() {
-    const num = document.getElementById('display1').value;
-
-    if (num === "0") {
-        document.getElementById('display1').value = "8";
-    } else {
-        document.getElementById('display1').value = num + "8";
+    else {
+     const newNum = num + '4';
+     document.getElementById('display').value = newNum;
     }
-}
-
-function nine() {
-    const num = document.getElementById('display1').value;
-
-    if (num === "0") {
-        document.getElementById('display1').value = "9";
-    } else {
-        document.getElementById('display1').value = num + "9";
+   }
+   
+   function five() {
+    const num = document.getElementById('display').value;
+   
+    if (num == 0) {
+     document.getElementById('display').value = 5;
     }
-}
+    else {
+     const newNum = num + '5';
+     document.getElementById('display').value = newNum;
+    }
+   }
+   
+   function six() {
+    const num = document.getElementById('display').value;
+   
+    if (num == 0) {
+     document.getElementById('display').value = 6;
+    }
+    else {
+     const newNum = num + '6';
+     document.getElementById('display').value = newNum;
+    }
+   }
+   
+   function seven() {
+    const num = document.getElementById('display').value;
+   
+    if (num == 0) {
+     document.getElementById('display').value = 7;
+    }
+    else {
+     const newNum = num + '7';
+     document.getElementById('display').value = newNum;
+    }
+   }
+   
+   function eight() {
+    const num = document.getElementById('display').value;
+   
+    if (num == 0) {
+     document.getElementById('display').value = 8;
+    }
+    else {
+     const newNum = num + '8';
+     document.getElementById('display').value = newNum;
+    }
+   }
+   
+   function nine() {
+    const num = document.getElementById('display').value;
+   
+    if (num == 0) {
+     document.getElementById('display').value = 9;
+    }
+    else {
+     const newNum = num + '9';
+     document.getElementById('display').value = newNum;
+    }
+   } 
 
 function dot() {
     const num = document.getElementById('display1').value;

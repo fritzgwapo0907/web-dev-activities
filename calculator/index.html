@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Calculator </title>
+    <title>Calculator</title>
+
     <script src="./js/numbers.js"></script>
     <script src="./js/operation.js"></script>
+
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -38,17 +40,17 @@
             color: #333;
         }
     
-        #display1  {
+        #display {
             margin-bottom: 10px;
-            width: 290px;
+            width: 205px;
         }
     
-        #display2{
+        #display2 {
             width: 205px;
             margin-bottom: 10px;
         }
     
-        #operator{
+        #operator {
             width: 70px;
             margin-bottom: 10px;
         }
@@ -78,7 +80,6 @@
             background: #616161;
         }
     
-        /* Operator buttons */
         .calculator button.operator {
             background: #f76c5e;
             color: #fff;
@@ -87,20 +88,25 @@
         .calculator button.operator:hover {
             background: #d65547;
         }
-    
-        /* Equals button */
-        .calculator button.equal {
+
+        #equals {
             background: #fdb827;
             color: #000;
-            width: 94px;
-        
+            height: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: inset 0px 0px 5px #000;
         }
-    
-        .calculator button.equal:hover {
+
+        #equals:hover {
             background: #e4a321;
         }
+
     
-        /* Special buttons (e.g., clear) */
+    
         .calculator button.special {
             background: #777;
             color: #fff;
@@ -110,32 +116,36 @@
             background: #555;
         }
     </style>
-    
 </head>
 <body>
     <div class="calculator">
-        <input type="text" value="0" id="display1" >
-        <input type="text" value="0" id="display2" >
-        <input type="text" placeholder="operator" id="operator" >
-        
+        <div class="screen">
+            <input type="text" id="display" value="0">
+            <input type="text" id="display2" hidden>
+            <input type="text" id="operator" >
+        </div>
         <div class="buttons">
-            <button onclick="seven()">7</button>
-            <button onclick="eight()">8</button>
-            <button onclick="nine()">9</button>
-            <button class="operator" onclick="plus()">+</button>
-            <button onclick="four()">4</button>
-            <button onclick="five()">5</button>
-            <button onclick="six()">6</button>
-            <button class="operator"onclick="minus()">-</button>
-            <button onclick="one()">1</button>
-            <button onclick="two()">2</button>
-            <button onclick="three()">3</button>
-            <button class="operator" onclick="multiply()">*</button>
-            <button onclick="zero()">0</button>
-            <button onclick="dot()">.</button>
-            <button class="equal" onclick="equal()">=</button>
-            <button class="operator" onclick="divide()">/</button>
+            <button type="button" onclick="seven()">7</button>
+            <button type="button" onclick="eight()">8</button>
+            <button type="button" onclick="nine()">9</button>
+            <button type="button" class="operator" onclick="plus()">+</button>
+
+            <button type="button" onclick="four()">4</button>
+            <button type="button" onclick="five()">5</button>
+            <button type="button" onclick="six()">6</button>
+            <button type="button" class="operator" onclick="minus()">-</button>
+
+            <button type="button" onclick="one()">1</button>
+            <button type="button" onclick="two()">2</button>
+            <button type="button" onclick="three()">3</button>
+            <button type="button" class="operator" onclick="multiply()">*</button>
+
+            <button type="button" onclick="zero()">0</button>
+            <button type="button" class="number" onclick="dot()">.</button>
+            <button type="button" id="equals" onclick="equals()">=</button>
+            <button type="button" class="operator" onclick="divide()">/</button>
             
+
         </div>
     </div>
 </body>
